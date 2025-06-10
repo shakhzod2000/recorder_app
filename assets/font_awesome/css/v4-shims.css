@@ -1,0 +1,502 @@
+/*!
+ * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2024 Fonticons, Inc.
+ */
+.fa.fa-glass {
+  --fa: "\f000"; }
+
+.fa.fa-envelope-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-envelope-o {
+  --fa: "\f0e0"; }
+
+.fa.fa-star-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-star-o {
+  --fa: "\f005"; }
+
+.fa.fa-remove {
+  --fa: "\f00d"; }
+
+.fa.fa-close {
+  --fa: "\f00d"; }
+
+.fa.fa-gear {
+  --fa: "\f013"; }
+
+.fa.fa-trash-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-trash-o {
+  --fa: "\f2ed"; }
+
+.fa.fa-home {
+  --fa: "\f015"; }
+
+.fa.fa-file-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-file-o {
+  --fa: "\f15b"; }
+
+.fa.fa-clock-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-clock-o {
+  --fa: "\f017"; }
+
+.fa.fa-arrow-circle-o-down {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-arrow-circle-o-down {
+  --fa: "\f358"; }
+
+.fa.fa-arrow-circle-o-up {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-arrow-circle-o-up {
+  --fa: "\f35b"; }
+
+.fa.fa-play-circle-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-play-circle-o {
+  --fa: "\f144"; }
+
+.fa.fa-repeat {
+  --fa: "\f01e"; }
+
+.fa.fa-rotate-right {
+  --fa: "\f01e"; }
+
+.fa.fa-refresh {
+  --fa: "\f021"; }
+
+.fa.fa-list-alt {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-list-alt {
+  --fa: "\f022"; }
+
+.fa.fa-dedent {
+  --fa: "\f03b"; }
+
+.fa.fa-video-camera {
+  --fa: "\f03d"; }
+
+.fa.fa-picture-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-picture-o {
+  --fa: "\f03e"; }
+
+.fa.fa-photo {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-photo {
+  --fa: "\f03e"; }
+
+.fa.fa-image {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-image {
+  --fa: "\f03e"; }
+
+.fa.fa-map-marker {
+  --fa: "\f3c5"; }
+
+.fa.fa-pencil-square-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-pencil-square-o {
+  --fa: "\f044"; }
+
+.fa.fa-edit {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-edit {
+  --fa: "\f044"; }
+
+.fa.fa-share-square-o {
+  --fa: "\f14d"; }
+
+.fa.fa-check-square-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-check-square-o {
+  --fa: "\f14a"; }
+
+.fa.fa-arrows {
+  --fa: "\f0b2"; }
+
+.fa.fa-times-circle-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-times-circle-o {
+  --fa: "\f057"; }
+
+.fa.fa-check-circle-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-check-circle-o {
+  --fa: "\f058"; }
+
+.fa.fa-mail-forward {
+  --fa: "\f064"; }
+
+.fa.fa-expand {
+  --fa: "\f424"; }
+
+.fa.fa-compress {
+  --fa: "\f422"; }
+
+.fa.fa-eye {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-eye-slash {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-warning {
+  --fa: "\f071"; }
+
+.fa.fa-calendar {
+  --fa: "\f073"; }
+
+.fa.fa-arrows-v {
+  --fa: "\f338"; }
+
+.fa.fa-arrows-h {
+  --fa: "\f337"; }
+
+.fa.fa-bar-chart {
+  --fa: "\e0e3"; }
+
+.fa.fa-bar-chart-o {
+  --fa: "\e0e3"; }
+
+.fa.fa-twitter-square {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400; }
+
+.fa.fa-twitter-square {
+  --fa: "\f081"; }
+
+.fa.fa-facebook-square {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400; }
+
+.fa.fa-facebook-square {
+  --fa: "\f082"; }
+
+.fa.fa-gears {
+  --fa: "\f085"; }
+
+.fa.fa-thumbs-o-up {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-thumbs-o-up {
+  --fa: "\f164"; }
+
+.fa.fa-thumbs-o-down {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-thumbs-o-down {
+  --fa: "\f165"; }
+
+.fa.fa-heart-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-heart-o {
+  --fa: "\f004"; }
+
+.fa.fa-sign-out {
+  --fa: "\f2f5"; }
+
+.fa.fa-linkedin-square {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400; }
+
+.fa.fa-linkedin-square {
+  --fa: "\f08c"; }
+
+.fa.fa-thumb-tack {
+  --fa: "\f08d"; }
+
+.fa.fa-external-link {
+  --fa: "\f35d"; }
+
+.fa.fa-sign-in {
+  --fa: "\f2f6"; }
+
+.fa.fa-github-square {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400; }
+
+.fa.fa-github-square {
+  --fa: "\f092"; }
+
+.fa.fa-lemon-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-lemon-o {
+  --fa: "\f094"; }
+
+.fa.fa-square-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-square-o {
+  --fa: "\f0c8"; }
+
+.fa.fa-bookmark-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-bookmark-o {
+  --fa: "\f02e"; }
+
+.fa.fa-twitter {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400; }
+
+.fa.fa-facebook {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400; }
+
+.fa.fa-facebook {
+  --fa: "\f39e"; }
+
+.fa.fa-facebook-f {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400; }
+
+.fa.fa-facebook-f {
+  --fa: "\f39e"; }
+
+.fa.fa-github {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400; }
+
+.fa.fa-credit-card {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-feed {
+  --fa: "\f09e"; }
+
+.fa.fa-hdd-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-hdd-o {
+  --fa: "\f0a0"; }
+
+.fa.fa-hand-o-right {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-hand-o-right {
+  --fa: "\f0a4"; }
+
+.fa.fa-hand-o-left {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-hand-o-left {
+  --fa: "\f0a5"; }
+
+.fa.fa-hand-o-up {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-hand-o-up {
+  --fa: "\f0a6"; }
+
+.fa.fa-hand-o-down {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-hand-o-down {
+  --fa: "\f0a7"; }
+
+.fa.fa-globe {
+  --fa: "\f57d"; }
+
+.fa.fa-tasks {
+  --fa: "\f828"; }
+
+.fa.fa-arrows-alt {
+  --fa: "\f31e"; }
+
+.fa.fa-group {
+  --fa: "\f0c0"; }
+
+.fa.fa-chain {
+  --fa: "\f0c1"; }
+
+.fa.fa-cut {
+  --fa: "\f0c4"; }
+
+.fa.fa-files-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-files-o {
+  --fa: "\f0c5"; }
+
+.fa.fa-floppy-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-floppy-o {
+  --fa: "\f0c7"; }
+
+.fa.fa-save {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-save {
+  --fa: "\f0c7"; }
+
+.fa.fa-navicon {
+  --fa: "\f0c9"; }
+
+.fa.fa-reorder {
+  --fa: "\f0c9"; }
+
+.fa.fa-magic {
+  --fa: "\e2ca"; }
+
+.fa.fa-pinterest {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400; }
+
+.fa.fa-pinterest-square {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400; }
+
+.fa.fa-pinterest-square {
+  --fa: "\f0d3"; }
+
+.fa.fa-google-plus-square {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400; }
+
+.fa.fa-google-plus-square {
+  --fa: "\f0d4"; }
+
+.fa.fa-google-plus {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400; }
+
+.fa.fa-google-plus {
+  --fa: "\f0d5"; }
+
+.fa.fa-money {
+  --fa: "\f3d1"; }
+
+.fa.fa-unsorted {
+  --fa: "\f0dc"; }
+
+.fa.fa-sort-desc {
+  --fa: "\f0dd"; }
+
+.fa.fa-sort-asc {
+  --fa: "\f0de"; }
+
+.fa.fa-linkedin {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400; }
+
+.fa.fa-linkedin {
+  --fa: "\f0e1"; }
+
+.fa.fa-rotate-left {
+  --fa: "\f0e2"; }
+
+.fa.fa-legal {
+  --fa: "\f0e3"; }
+
+.fa.fa-tachometer {
+  --fa: "\f625"; }
+
+.fa.fa-dashboard {
+  --fa: "\f625"; }
+
+.fa.fa-comment-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-comment-o {
+  --fa: "\f075"; }
+
+.fa.fa-comments-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-comments-o {
+  --fa: "\f086"; }
+
+.fa.fa-flash {
+  --fa: "\f0e7"; }
+
+.fa.fa-clipboard {
+  --fa: "\f0ea"; }
+
+.fa.fa-lightbulb-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-lightbulb-o {
+  --fa: "\f0eb"; }
+
+.fa.fa-exchange {
+  --fa: "\f362"; }
+
+.fa.fa-cloud-download {
+  --fa: "\f0ed"; }
+
+.fa.fa-cloud-upload {
+  --fa: "\f0ee"; }
+
+.fa.fa-bell-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa-bell-o {
+  --fa: "\f0f3"; }
+
+.fa.fa-cutlery {
+  --fa: "\f2e7"; }
+
+.fa.fa-file-text-o {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400; }
+
+.fa.fa
