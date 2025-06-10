@@ -1,8 +1,13 @@
 # 🎤 Voice Recorder Web App
 
-**A full-stack web application for recording voice memos and sending them via email, with secure authentication and cross-device compatibility.
-**
-![Demo Screenshot](/assets/screenshot.png) *(optional: add screenshot later)*
+**A full-stack web application for recording voice memos and sending them via email, with secure authentication and cross-device compatibility.**
+
+## 📸 Screenshots
+![Login](https://github.com/user-attachments/assets/f6f7b33c-4e55-4990-be65-81e045e8fd36)
+![Register](https://github.com/user-attachments/assets/2a49cd75-aac1-447f-8c12-c2c7ec536a24)
+![Reset_Form](https://github.com/user-attachments/assets/91dc08fb-5617-48e6-907a-e1970246729f)
+![main_page](https://github.com/user-attachments/assets/c4faecf0-cb4b-4e41-90de-1e6a679289c2)
+![options_page](https://github.com/user-attachments/assets/911aef0b-ffab-47a9-8edf-250e0095c860)
 
 ## ✨ Features
 
