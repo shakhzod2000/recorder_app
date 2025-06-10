@@ -1,5 +1,3 @@
-# Recorder App
-
 # 🎤 Voice Recorder Web App
 
 A full-stack web application for recording voice memos and sending them via email, with secure authentication and cross-device compatibility.
