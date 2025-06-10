@@ -12,7 +12,7 @@ $(document).ready(function () {
       navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
         mediaRecorder = new MediaRecorder(stream);
         mediaRecorder.start();
-        status.text('Aufnahme gestartet...');
+        status.text('Recording started...');
         startRecord.prop('disabled', true);
         stopRecord.prop('disabled', false);
         if (inputField.hasClass('d-block')) {
@@ -29,11 +29,11 @@ $(document).ready(function () {
 
           const receiver = $('#hidden-receiver').val();
 
-          formData.append('audio', audioBlob, 'aufnahme.webm');
-          // Dem FormData-Objekt hinzufügen
+          formData.append('audio', audioBlob, 'recording.webm');
+          // Add receiver to FormData object
           formData.append('receiver', receiver);
 
-          status.text('Sende Aufnahme...');
+          status.text('Sending the recording...');
 
           $.ajax({
             url: 'send.php',
@@ -42,11 +42,11 @@ $(document).ready(function () {
             processData: false,
             contentType: false,
             success: () => {
-              status.text('✅ Gesendet!');
+              status.text('✅ Sent!');
               // Clear input & reset height
               inputField.val('').css('height', 'auto');
             },
-            error: () => status.text('❌ Fehler beim Senden.'),
+            error: () => status.text('❌ Error with sending.'),
           });
 
           audioChunks = [];
@@ -63,7 +63,7 @@ $(document).ready(function () {
 
       if (inputField.is(':visible')) {
         // Text mode
-        status.text('Sende Notiz...');
+        status.text('Sending message...');
 
         var formData = new FormData();
         var message = inputField.val();
@@ -78,11 +78,11 @@ $(document).ready(function () {
           processData: false,
           contentType: false,
           success: () => {
-            status.text('✅ Gesendet!');
+            status.text('✅ Sent!');
             // Clear input & reset height
             inputField.val('').css('height', 'auto');
           },
-          error: () => status.text('❌ Fehler beim Senden.'),
+          error: () => status.text('❌ Error with sending.'),
         });
 
       } else {

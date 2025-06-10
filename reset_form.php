@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,15 +17,15 @@
     <div class="row justify-content-center">
         <div class="col-md-4">
             <div class="card">
-                <div class="card-header text-center">Reset Formular</div>
+                <div class="card-header text-center">Reset Form</div>
                 <div class="card-body">
                     <form id="resetForm">
-                        <label class="form-label">E-Mail für Reset</label>
+                        <label class="form-label">Email for Reset</label>
                         <input type="email" name="email" class="form-control mb-2" required>
-                        <button type="submit" class="btn btn-warning w-100">Passwort zurücksetzen</button>
+                        <button type="submit" class="btn btn-warning w-100">Reset password</button>
                     </form>
                     <hr>
-                    <a href="index.php">Zurück zum Login</a>
+                    <a href="index.php">Back to Login</a>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
     $('#resetForm').submit(function(e) {
         e.preventDefault();
         $.post('reset_request.php', $(this).serialize(), function(res) {
-            alert(res === 'sent' ? '✔ Reset-E-Mail gesendet' : '❗ E-Mail nicht gefunden');
+            alert(res === 'sent' ? '✔ Reset-Email is sent' : '❗ Email not found');
         });
     });
 </script>

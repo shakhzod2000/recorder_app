@@ -1,8 +1,8 @@
 <?php
 // this is for debugging
-//ini_set('display_errors', 1);
-//ini_set('display_startup_errors', 1);
-//error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 session_start();
 $isMobile = preg_match('/iPhone|Android/i', $_SERVER['HTTP_USER_AGENT']);
@@ -43,7 +43,7 @@ if ($user && password_verify($password, $user['password'])) {
         setcookie('remember_token', $token, [
             'expires' => time() + $duration,
             'path' => '/',
-            'domain' => '.ioflow.net',
+            'domain' => 'localhost',
             'secure' => true, // HTTPS only
             'httponly' => true, // Prevent JS access
             'samesite' => 'None' // Required for cross-site in Safari

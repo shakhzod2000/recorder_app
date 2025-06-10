@@ -25,10 +25,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 ?>
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Reset Passwort</title>
+    <title>Reset Password</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="assets/bootstrap-5.3.5/css/bootstrap.css" />
@@ -67,23 +67,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div class="container d-flex flex-column align-items-center justify-content-center min-vh-100">
     <?php if ($resetPopup): ?>
         <div class="popup-message updated">
-            ✅ Passwort aktualisiert!
+            ✅ Password updated!
         </div>
         <!-- Redirect message -->
         <div id="redirectMsg" class="alert alert-warning text-center mb-3 d-none" style="max-width: 500px">
-            ⏳ Sie werden zur Login Seite weitergeleitet...
+            ⏳ You will be redirected to the login page...
         </div>
     <?php endif; ?>
     <!-- Form Container -->
     <div class="bg-white shadow-sm rounded p-4 w-100" style="max-width: 400px;">
-      <h4 class="mb-4 text-center">Passwort zurücksetzen</h4>
+      <h4 class="mb-4 text-center">Password reset</h4>
       <form method="POST">
         <input type="hidden" name="token" value="<?=htmlspecialchars($token)?>">
         <div class="mb-3">
-            <label class="form-label">Neues Passwort</label>
+            <label class="form-label">New password</label>
             <input type="password" name="password" class="form-control" required>
         </div>
-        <button type="submit" class="btn btn-primary w-100">Zurücksetzen</button>
+        <button type="submit" class="btn btn-primary w-100">Reset</button>
       </form>
     </div>
 

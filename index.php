@@ -31,7 +31,7 @@ if (isset($_COOKIE['remember_token'])) {
         exit();
     } else {
         // Invalid token - clear cookie
-        setcookie('remember_token', '', time() - 3600, '/', '.ioflow.net', true, true); // 3600 = 1 hour
+        setcookie('remember_token', '', time() - 3600, '/', 'localhost', true, true); // 3600 = 1 hour
     }
 }
 

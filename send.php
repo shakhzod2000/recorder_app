@@ -30,19 +30,19 @@ if (isset($_REQUEST['message'])) {
 
         // Nachricht
         $mail->isHTML(true);
-        $mail->Subject = 'Neue Notiz: '.substr($_REQUEST['message'],0,20).'...';
+        $mail->Subject = 'New message: '.substr($_REQUEST['message'],0,20).'...';
         $mail->Body    = $_REQUEST['message'];
         $mail->send();
         http_response_code(200);
-        echo 'Gesendet!';
+        echo 'Sent!';
     } catch (Exception $e) {
         http_response_code(500);
-        echo 'Fehler beim Senden: ' . $mail->ErrorInfo;
+        echo 'Error with sending: ' . $mail->ErrorInfo;
     }
 
 
 } else {
-    // Audio Modus
+    // Audio Mode
     require 'phpmailer/src/SMTP.php';
 
     if ($_FILES['audio']['error'] === UPLOAD_ERR_OK) {
@@ -52,7 +52,7 @@ if (isset($_REQUEST['message'])) {
         $uploadDir = __DIR__ . '/uploads/';
         if (!is_dir($uploadDir)) mkdir($uploadDir);
 
-        $mp3Path = $uploadDir . 'aufnahme_' . time() . '_' . rand(1000, 9999) . '.mp3';
+        $mp3Path = $uploadDir . 'recording_' . time() . '.mp3';
 
         // WebM ? MP3 konvertieren mit ffmpeg
         $ffmpegCmd = "ffmpeg -i " . escapeshellarg($webmTmp) . " -vn -ar 44100 -ac 2 -b:a 192k " . escapeshellarg($mp3Path);
@@ -60,7 +60,7 @@ if (isset($_REQUEST['message'])) {
 
         if ($returnCode !== 0) {
             http_response_code(500);
-            echo 'Fehler bei der Konvertierung.';
+            echo 'Error with converting.';
             exit;
         }
 
@@ -91,20 +91,20 @@ if (isset($_REQUEST['message'])) {
 
             // Nachricht
             $mail->isHTML(true);
-            $mail->Subject = 'Neue Sprachaufnahme';
-            $mail->Body    = 'Im Anhang befindet sich eine neue Sprachaufnahme.';
+            $mail->Subject = 'New Recording';
+            $mail->Body    = 'A new voice recording is attached.';
 
             $mail->send();
             http_response_code(200);
-            echo 'Gesendet!';
+            echo 'Sent!';
         } catch (Exception $e) {
             http_response_code(500);
-            echo 'Fehler beim Senden: ' . $mail->ErrorInfo;
+            echo 'Error with sending: ' . $mail->ErrorInfo;
         }
-        // Optional: MP3 nach Versand löschen
+        // Optional: delete MP3 after sending
         unlink($mp3Path);
     } else {
         http_response_code(400);
-        echo 'Dateiupload fehlgeschlagen.';
+        echo 'File upload failed.';
     }
 }

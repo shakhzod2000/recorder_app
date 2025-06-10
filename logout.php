@@ -18,7 +18,7 @@ try {
         setcookie('remember_token', '', [
             'expires' => time() - 3600,
             'path' => '/',
-            'domain' => '.ioflow.net', // Match your login cookie
+            'domain' => 'localhost', // Match your login cookie
             'secure' => true,
             'httponly' => true,
             'samesite' => 'None'

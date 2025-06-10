@@ -1,6 +1,9 @@
 <?php
+// this is for debugging
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 session_start();
-
 // Redirect to login page if not logged in
 if (!isset($_SESSION['user_id'])) {
     header('Location: index.php');
@@ -28,8 +31,8 @@ try {
     $buttons = $stmt->fetchAll(PDO::FETCH_GROUP | PDO::FETCH_UNIQUE);
 // PDO::FETCH_GROUP - groups results by 1st column(btn_num) where keys are btn_num
 // [
-//    1 => ['name' => 'Scholz', 'email' => 'scholz@akeon.de', ...],
-//    2 => ['name' => 'Kontakt', 'email' => 'kontakt@akeon.de', ...]
+//    1 => ['name' => 'Shakhzod', 'email' => 'example@gmail.com', ...],
+//    2 => ['name' => 'Alice', 'email' => 'example@gmail.com', ...]
 // ]
 // PDO::FETCH_UNIQUE - ensures each group contains only one row,
 // without this, we'd get nested arrays even for single rows
@@ -42,17 +45,17 @@ try {
 
 $output = shell_exec('ffmpeg -version 2>&1');
 if (strpos($output, 'ffmpeg version') === false) {
-    echo "FFmpeg ist NICHT installiert.\n";
+    echo "FFmpeg is NOT installed.\n";
     exit;
 }
 
 ?>
 <!DOCTYPE html>
-<html lang="de" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sprachaufnahme </title>
+    <title>Recording Page </title>
 
     <link rel="stylesheet" href="assets/bootstrap-5.3.5/css/bootstrap.css" />
     <link rel="manifest" href="manifest.json" />
@@ -69,7 +72,7 @@ if (strpos($output, 'ffmpeg version') === false) {
 
     <?php if ($showPopup): ?>
         <div class="popup-message success">
-            ✅ Login erfolgreich!
+            ✅ Login successful!
         </div>
     <?php endif; ?>
 
