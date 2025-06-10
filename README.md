@@ -4,7 +4,7 @@
 
 ## 📸 Screenshots
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/f6f7b33c-4e55-4990-be65-81e045e8fd36" width="300" height="300" alt="Login" />
+  <img src="https://github.com/user-attachments/assets/f6f7b33c-4e55-4990-be65-81e045e8fd36" width="300" height="350" alt="Login" />
 </p>
 
 ![Login](https://github.com/user-attachments/assets/f6f7b33c-4e55-4990-be65-81e045e8fd36)
