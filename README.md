@@ -44,3 +44,19 @@ A full-stack web application for recording voice memos and sending them via emai
    ```bash
    # FFmpeg (Debian/Ubuntu)
    sudo apt install ffmpeg php-ffmpeg
+
+2. **Configure**:
+
+    Set your SMTP credentials and app settings
+
+3. **Run**:
+   ```bash
+   php -S localhost:8000
+
+### 🌟 Highlights
+
+✅ **Cross-device support** (iOS Safari workarounds implemented)
+✅ **Zero client-side dependencies** (vanilla JS + Bootstrap CDN)
+✅ **Memory-efficient** audio chunking (no browser crashes)
+
+_Developed by **Shakhzod Shermatov**_
