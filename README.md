@@ -45,7 +45,7 @@ A full-stack web application for recording voice memos and sending them via emai
 
 2. **Configure**:
 
-   > Set your SMTP credentials and app settings
+   `Set your SMTP credentials and app settings`
 
 3. **Run**:
    ```bash
@@ -53,8 +53,8 @@ A full-stack web application for recording voice memos and sending them via emai
 
 ## 🌟 Highlights
 
-  ✅ **Cross-device support** (iOS Safari workarounds implemented)
-  ✅ **Zero client-side dependencies** (vanilla JS + Bootstrap CDN)
-  ✅ **Memory-efficient** audio chunking (no browser crashes)
+  - ✅ **Cross-device support** (iOS Safari workarounds implemented)
+  - ✅ **Zero client-side dependencies** (vanilla JS + Bootstrap CDN)
+  - ✅ **Memory-efficient** audio chunking (no browser crashes)
 
 _Developed by **Shakhzod Shermatov**_
