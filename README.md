@@ -44,8 +44,8 @@ A full-stack web application for recording voice memos and sending them via emai
    sudo apt install ffmpeg php-ffmpeg
 
 2. **Configure**:
-
-   `Set your SMTP credentials and app settings`
+   ```bash
+   Set your SMTP credentials and Database credentials
 
 3. **Run**:
    ```bash
