@@ -11,6 +11,9 @@
   <img src="https://github.com/user-attachments/assets/911aef0b-ffab-47a9-8edf-250e0095c860" width="600" height="350" alt="Login" />
 </p>
 
+  <img src="https://github.com/user-attachments/assets/425f1a74-6441-4a67-a084-eb7c5edc4afb" width="600" height="350" alt="options" />
+  <img src="https://github.com/user-attachments/assets/87e5d1ec-b4fe-48b4-8aa5-77f0d38cc458" width="600" height="350" alt="main" />
+
 ## ✨ Features
 
 ### 🎙️ Audio Processing
