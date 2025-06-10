@@ -16,7 +16,7 @@
 
 ### 🎙️ Audio Processing
 - **Browser-based recording** using MediaRecorder API
-- **WebM to MP3 conversion** via FFmpeg backend (60% size reduction)
+- **WebM to MP3 conversion** via FFmpeg backend
 - **Auto-cleanup** of temporary files post-processing
 
 ### ✉️ Email Delivery
