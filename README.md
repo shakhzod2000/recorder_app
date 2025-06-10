@@ -3,6 +3,7 @@
 **A full-stack web application for recording voice memos and sending them via email, with secure authentication and cross-device compatibility.**
 
 ## 📸 Screenshots
+
 <img src="[image-url](https://github.com/user-attachments/assets/f6f7b33c-4e55-4990-be65-81e045e8fd36)" alt="Login" width="300" height="200">
 
 ![Login](https://github.com/user-attachments/assets/f6f7b33c-4e55-4990-be65-81e045e8fd36)
