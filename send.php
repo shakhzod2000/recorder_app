@@ -7,25 +7,25 @@ require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
 
 if (isset($_REQUEST['message'])) {
-    // Text Modus
+    // Text Mode
     require 'phpmailer/src/SMTP.php';
 
     $mail = new PHPMailer(true);
 
     try {
-        // SMTP-Konfiguration
+        // SMTP-Configuration
         $mail->isSMTP();
-        $mail->Host       = $mail_config['host']; // z.B. smtp.gmail.com
+        $mail->Host       = $mail_config['host']; // e.g. smtp.gmail.com
         $mail->Port       = $mail_config['port']; // oder 465
-        $mail->SMTPAuth   = $mail_config['SMTPAuth']; // SMTP Authentifizierung aktivieren
+        $mail->SMTPAuth   = $mail_config['SMTPAuth']; // activate SMTP Authentication
         $mail->Username   = $mail_config['username'];
         $mail->Password   = $mail_config['password'];
-        $mail->SMTPSecure = $mail_config['SMTPSecure']; // oder 'ssl'
+        $mail->SMTPSecure = $mail_config['SMTPSecure']; // or 'ssl'
 
-        // Absender & Empfänger
+        // Sender & Receiver
         $mail->setFrom($mail_config['from1'], $mail_config['from2']);
 
-        $mail->addAddress($_REQUEST['receiver']); // Empfaenger
+        $mail->addAddress($_REQUEST['receiver']); // Receiver
 
 
         // Nachricht
@@ -54,7 +54,7 @@ if (isset($_REQUEST['message'])) {
 
         $mp3Path = $uploadDir . 'recording_' . time() . '.mp3';
 
-        // WebM ? MP3 konvertieren mit ffmpeg
+        // WebM ? MP3 conversion with ffmpeg
         $ffmpegCmd = "ffmpeg -i " . escapeshellarg($webmTmp) . " -vn -ar 44100 -ac 2 -b:a 192k " . escapeshellarg($mp3Path);
         exec($ffmpegCmd, $output, $returnCode);
 
@@ -64,16 +64,16 @@ if (isset($_REQUEST['message'])) {
             exit;
         }
 
-        // MP3 per Mail versenden
+        // Send MP3 via email
         $tmpName = $_FILES['audio']['tmp_name'];
         $filename = $_FILES['audio']['name'];
 
         $mail = new PHPMailer(true);
 
         try {
-            // SMTP-Konfiguration
+            // SMTP-Configuration
             $mail->isSMTP();
-            $mail->Host       = $mail_config['host']; // z.B. smtp.gmail.com
+            $mail->Host       = $mail_config['host']; // e.g. smtp.gmail.com
             $mail->SMTPAuth   = $mail_config['SMTPAuth']; // SMTP Authentifizierung aktivieren
             $mail->Username   = $mail_config['username'];
             $mail->Password   = $mail_config['password'];

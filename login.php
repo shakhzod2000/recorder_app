@@ -43,7 +43,7 @@ if ($user && password_verify($password, $user['password'])) {
         setcookie('remember_token', $token, [
             'expires' => time() + $duration,
             'path' => '/',
-            'domain' => 'localhost',
+            'domain' => DOMAIN,
             'secure' => true, // HTTPS only
             'httponly' => true, // Prevent JS access
             'samesite' => 'None' // Required for cross-site in Safari

@@ -69,7 +69,7 @@ $stmt->execute([$hashed_token, $user_id, $expiry]);
 setcookie('remember_token', $token, [
     'expires' => time() + $duration,
     'path' => '/',
-    'domain' => 'localhost',
+    'domain' => DOMAIN,
     'secure' => true,
     'httponly' => true,
     'samesite' => 'None'

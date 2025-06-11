@@ -3,6 +3,8 @@
 $env = parse_ini_file('.env');
 if (!$env) die('Missing .env file');
 
+define('DOMAIN', $env['DOMAIN']);
+
 define('DB_HOST', $env['DB_HOST']);
 define('DB_NAME', $env['DB_NAME']);
 define('DB_USER', $env['DB_USER']);
@@ -16,11 +18,12 @@ define('SMTP_PASS', $env['SMTP_PASS']);
 define('SMTP_FROM_1', $env['SMTP_FROM_1']);
 define('SMTP_FROM_2', $env['SMTP_FROM_2']);
 
+
 // DB Configuration
-$dbname=DB_NAME; // db-name
-$dbuser=DB_USER; // db-username
-$dbpass=DB_PASS; // db-password
-$dbserver=DB_HOST; // db-host
+$dbname=DB_NAME;
+$dbuser=DB_USER;
+$dbpass=DB_PASS;
+$dbserver=DB_HOST;
 
 $isMobile = preg_match('/iPhone|Android/i', $_SERVER['HTTP_USER_AGENT']);
 $duration = $isMobile ? 86400 * 90 : 86400 * 30;
@@ -32,7 +35,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_set_cookie_params([
         'lifetime' => $duration,
         'path' => '/',
-        'domain' => 'localhost', //.your-domain.com
+        'domain' => DOMAIN, //.your-domain.com
         'secure' => true,
         'httponly' => true,
         'samesite' => 'None'
@@ -41,8 +44,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// define('HOST','https://your-domain.com/');
-define('HOST','http://localhost:8000/');
+define('HOST','https://' . DOMAIN . '/');
 
 // SMTP-Konfiguration
 if(!isset($mail_config)) {

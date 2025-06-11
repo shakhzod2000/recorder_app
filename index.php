@@ -31,13 +31,13 @@ if (isset($_COOKIE['remember_token'])) {
         exit();
     } else {
         // Invalid token - clear cookie
-        setcookie('remember_token', '', time() - 3600, '/', 'localhost', true, true); // 3600 = 1 hour
+        setcookie('remember_token', '', time() - 3600, '/', DOMAIN, true, true); // 3600 = 1 hour
     }
 }
 
 ?>
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -71,25 +71,25 @@ if (isset($_COOKIE['remember_token'])) {
           <div class="card-body">
             <form id="loginForm">
               <div class="mb-3">
-                <label class="form-label">Benutzername</label>
+                <label class="form-label">Username</label>
                 <input type="text" name="username" class="form-control" required>
               </div>
               <div class="mb-1">
-                <label class="form-label">Passwort</label>
+                <label class="form-label">Password</label>
                 <input type="password" name="password" class="form-control" required>
               </div>
-              <p class="mb-3"><a href="reset_form.php">Passwort vergessen?</a></p>
+              <p class="mb-3"><a href="reset_form.php">Forgot password?</a></p>
               <div class="mb-3">
                 <label class="form-check d-flex align-items-center gap-2" style="cursor: pointer;">
                   <input type="checkbox" name="remember_me" class="form-check-input" style="cursor: pointer;">
-                  <span class="form-check-label">Eingeloggt bleiben</span>
+                  <span class="form-check-label">Remember me</span>
                 </label>
               </div>
-              <button type="submit" class="btn btn-success w-100">Einloggen</button>
+              <button type="submit" class="btn btn-success w-100">Login</button>
               <div id="error" class="text-danger mt-2"></div>
             </form>
             <hr>
-            <p>Noch kein Konto? <a href="register_form.php">Anmelden</a></p>
+            <p>Don't have an account? <a href="register_form.php">Sign Up</a></p>
           </div>
         </div>
       </div>
@@ -103,7 +103,7 @@ if (isset($_COOKIE['remember_token'])) {
             if (res === 'success') {
                 location.href = 'index_recorder.php';
             } else {
-                const popup = $('<div class="popup-message err">❌ Login fehlgeschlagen</div>');
+                const popup = $('<div class="popup-message err">❌ Login failed</div>');
                 $('body').prepend(popup);
                 // Trigger popup after small delay
                 setTimeout(() => {

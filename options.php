@@ -82,7 +82,7 @@ $savedValues = $stmt->fetchAll(PDO::FETCH_GROUP | PDO::FETCH_UNIQUE);
 
 ?>
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Options</title>
@@ -112,7 +112,7 @@ $savedValues = $stmt->fetchAll(PDO::FETCH_GROUP | PDO::FETCH_UNIQUE);
 
     <?php if ($savedPopup): ?>
         <div class="popup-message saved">
-            ✅ Gespeichert!
+            ✅ Saved!
         </div>
     <?php endif; ?>
 
@@ -127,7 +127,7 @@ $savedValues = $stmt->fetchAll(PDO::FETCH_GROUP | PDO::FETCH_UNIQUE);
 
         <div class="dropdown-menu dropdown-menu-end p-2" id="dropdownMenu" style="min-width: 150px;">
             <a href="index_recorder.php" class="dropdown-item d-flex align-items-center gap-2 px-2 py-1">
-                <i class="fa-solid fa-house"></i> Hauptseite
+                <i class="fa-solid fa-house"></i> Homepage
             </a>
             <a href="logout.php" class="dropdown-item d-flex align-items-center gap-2 px-2 py-1 text-danger">
                 <i class="fa-solid fa-right-from-bracket"></i> Logout
@@ -151,27 +151,27 @@ $savedValues = $stmt->fetchAll(PDO::FETCH_GROUP | PDO::FETCH_UNIQUE);
               </div>
 
               <div class="col-md-6">
-                  <label class="form-label">E-Mail:</label>
+                  <label class="form-label">Email:</label>
                   <input type="email" name="email_<?=$i?>" value="<?= htmlspecialchars($savedValues[$i]['email']) ?>" class="form-control">
               </div>
 
               <div class="col-md-6">
-                  <label class="form-label">Farbe:</label>
+                  <label class="form-label">Color:</label>
                   <input type="color" name="color_<?=$i?>" value="<?= htmlspecialchars($savedValues[$i]['color']) ?>" class="form-control form-control-color">
               </div>
 
               <?php
                 $icons = [
-                    'fa-solid fa-star' => '⭐ Stern',
-                    'fa-solid fa-heart' => '❤️ Herz',
-                    'fa-solid fa-square-check' => '✔️ Haken',
-                    'fa-solid fa-flag' => '🚩 Flagge',
+                    'fa-solid fa-star' => '⭐ Star',
+                    'fa-solid fa-heart' => '❤️ Heart',
+                    'fa-solid fa-square-check' => '✔️ Check',
+                    'fa-solid fa-flag' => '🚩 Flag',
                 ];
               ?>
               <div class="col-md-6">
                   <label class="form-label">Icon:</label>
                   <select name="icon_<?=$i?>" class="form-select">
-                      <option value="">Icon wählen</option>
+                      <option value="">Choose icon</option>
                       <?php foreach($icons as $value => $label): ?>
                         <option value="<?= $value ?>"
                             <?= $savedValues[$i]['icon_class'] === $value ? 'selected' : '' ?>
@@ -190,7 +190,7 @@ $savedValues = $stmt->fetchAll(PDO::FETCH_GROUP | PDO::FETCH_UNIQUE);
       </div>
 
       <div class="container text-end mb-3">
-          <button type="submit" class="btn btn-success">Speichern</button>
+          <button type="submit" class="btn btn-success">Save</button>
       </div>
   </form>
 

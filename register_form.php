@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registrierung</title>
+    <title>Register</title>
     <script src="assets/jQuery/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="assets/bootstrap-5.3.5/css/bootstrap.css" />
 
@@ -17,25 +17,25 @@
     <div class="row justify-content-center">
         <div class="col-md-4">
             <div class="card">
-                <div class="card-header text-center">Registrierung</div>
+                <div class="card-header text-center">Sign Up</div>
                 <div class="card-body">
                     <form id="registerForm">
                         <div class="mb-3">
-                            <label class="form-label">Benutzername</label>
+                            <label class="form-label">Username</label>
                             <input type="text" name="username" class="form-control mb-2" required>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">E-Mail</label>
+                            <label class="form-label">Email</label>
                             <input type="email" name="email" class="form-control mb-2" required>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Passwort</label>
+                            <label class="form-label">Password</label>
                             <input type="password" name="password" class="form-control mb-2" required>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Registrieren</button>
+                        <button type="submit" class="btn btn-primary w-100">Register</button>
                     </form>
                     <hr>
-                    <p>Hast du schon ein Konto? <a href="index.php">Einloggen</a></p>
+                    <p>Already have an account? <a href="index.php">Login</a></p>
                 </div>
             </div>
         </div>
@@ -47,10 +47,10 @@
         e.preventDefault();
         $.post('register.php', $(this).serialize(), function(res) {
             if (res === 'success') {
-                alert('✅ Registrierung erfolgreich!');
+                alert('✅ Registered successfully!');
                 location.href = 'index_recorder.php';
             } else {
-                alert('⚠ Benutzer existiert bereits!');
+                alert('⚠ User already exists!');
             }
         });
     });

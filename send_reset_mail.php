@@ -22,8 +22,8 @@ function sendPasswordResetMail($to, $link, $mail_config) {
         $mail->addAddress($to);
 
         $mail->isHTML(true);
-        $mail->Subject = 'Passwort zurücksetzen';
-        $mail->Body    = "Setze dein Passwort zurück: $link";
+        $mail->Subject = 'Reset Password';
+        $mail->Body    = "Reset your passwort: $link";
 
         $mail->send();
         http_response_code(200);
